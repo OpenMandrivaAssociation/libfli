@@ -3,7 +3,7 @@
 Name:          libfli
 Summary:       Finger Lakes Instrument Library
 Version:       1.7
-Release:       %mkrel 0.%svn.1
+Release:       %mkrel 0.%svn.2
 Url:           http://indi.sourceforge.net/index.php/Main_Page
 License:       GPLv2+
 Group:         Development/KDE and Qt
