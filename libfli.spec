@@ -10,6 +10,7 @@ Group:         Development/KDE and Qt
 BuildRoot:     %{_tmppath}/%{name}-%{version}-build
 Source0:       %{name}-%{version}.%svn.tar.bz2
 Patch0:        libfli-1.7.190-fix-link.patch
+Patch1:        libfli-1.7.190-fix-lib.patch
 BuildRequires: kde4-macros
 
 %description
@@ -51,6 +52,7 @@ Files needed to build applications based on %{name}.
 %prep
 %setup -q  -n %name
 %patch0 -p0
+%patch1 -p0
 
 %build
 %cmake_kde4
