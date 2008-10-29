@@ -3,7 +3,7 @@
 Name:          libfli
 Summary:       Finger Lakes Instrument Library
 Version:       1.7
-Release:       %mkrel 0.%svn.4
+Release:       %mkrel 0.%svn.5
 Url:           http://indi.sourceforge.net/index.php/Main_Page
 License:       GPLv2+
 Group:         Development/KDE and Qt
@@ -11,7 +11,6 @@ BuildRoot:     %{_tmppath}/%{name}-%{version}-build
 Source0:       %{name}-%{version}.%svn.tar.bz2
 Patch0:        libfli-1.7.190-fix-link.patch
 Patch1:        libfli-1.7.190-fix-lib.patch
-Patch2:        libfli-1.7.190-fix-include.patch
 BuildRequires: kde4-macros
 
 %description
@@ -45,7 +44,7 @@ Files needed to build applications based on %{name}.
 
 %files devel
 %defattr(-,root,root)
-%_kde_includedir/fli/libfli.h
+%_kde_includedir/libfli.h
 %_kde_libdir/libfli.so
 
 #---------------------------------------------
@@ -54,7 +53,6 @@ Files needed to build applications based on %{name}.
 %setup -q  -n %name
 %patch0 -p0
 %patch1 -p0
-%patch2 -p0
 
 %build
 %cmake_kde4
