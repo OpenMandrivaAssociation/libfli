@@ -1,0 +1,11 @@
+--- CMakeLists.txt~	2008-10-29 10:01:02.000000000 +0100
++++ CMakeLists.txt	2008-10-29 10:14:34.000000000 +0100
+@@ -13,7 +13,7 @@
+ set_target_properties(fli PROPERTIES VERSION 1.7 SOVERSION 1)
+ 
+ #need to link to some other libraries ? just add them here
+-TARGET_LINK_LIBRARIES(fli)
++TARGET_LINK_LIBRARIES(fli -lm )
+ 
+ #add an install target here
+ INSTALL(FILES libfli.h DESTINATION include)

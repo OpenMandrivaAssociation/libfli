@@ -1,0 +1,25 @@
+--- CMakeLists.txt~	2008-10-29 10:49:08.000000000 +0100
++++ CMakeLists.txt	2008-10-29 10:49:45.000000000 +0100
+@@ -2,6 +2,13 @@
+ cmake_minimum_required(VERSION 2.4.7)
+ 
+ ADD_DEFINITIONS(-Wall -O2)
++# Suffix for x86/x86_64:
++SET(LIB_SUFFIX "" CACHE STRING "Define suffix of directory name (32/64)" )
++
++SET(LIB_INSTALL_DIR
++       "${CMAKE_INSTALL_PREFIX}/lib${LIB_SUFFIX}"
++          CACHE PATH "The subdirectory relative to the install prefix where libraries will be installed (default is lib${LIB_SUFFIX}."
++                      )
+ 
+ set(fli_LIB_SRCS
+    libfli.c libfli-camera.c libfli-camera-parport.c libfli-camera-usb.c libfli-filter-focuser.c libfli-mem.c libfli-serial.c libfli-sys.c libfli-usb.c libfli-debug.c libfli-parport.c libfli-usb-sys.c
+@@ -18,7 +25,7 @@
+ #add an install target here
+ INSTALL(FILES libfli.h DESTINATION include)
+ 
+-INSTALL(TARGETS fli LIBRARY DESTINATION lib${LIB_POSTFIX})
++INSTALL(TARGETS fli LIBRARY DESTINATION ${LIB_INSTALL_DIR})
+ 
+ 
+ 
