@@ -62,3 +62,43 @@ rm -rf "%{buildroot}"
 
 %clean
 rm -rf "%{buildroot}"
+
+
+%changelog
+* Fri Apr 29 2011 Oden Eriksson <oeriksson@mandriva.com> 1.7-5mdv2011.0
++ Revision: 660248
+- mass rebuild
+
+* Sun Nov 28 2010 Oden Eriksson <oeriksson@mandriva.com> 1.7-4mdv2011.0
++ Revision: 602542
+- rebuild
+
+* Tue Mar 16 2010 Oden Eriksson <oeriksson@mandriva.com> 1.7-3mdv2010.1
++ Revision: 520769
+- rebuilt for 2010.1
+
+* Wed Sep 02 2009 Christophe Fergeau <cfergeau@mandriva.com> 1.7-2mdv2010.0
++ Revision: 425542
+- rebuild
+
+* Tue Nov 25 2008 Funda Wang <fwang@mandriva.org> 1.7-1mdv2009.1
++ Revision: 306529
+- 1.7 final
+
+* Wed Oct 29 2008 Nicolas Lécureuil <nlecureuil@mandriva.com> 1.7-0.190.5mdv2009.1
++ Revision: 298470
+- Use default include dir,  kdeedu was wrong
+  TODO: fix kdeedu
+
+* Wed Oct 29 2008 Nicolas Lécureuil <nlecureuil@mandriva.com> 1.7-0.190.4mdv2009.1
++ Revision: 298263
+- Bump release*
+- Fix include path
+
+* Wed Oct 29 2008 Nicolas Lécureuil <nlecureuil@mandriva.com> 1.7-0.190.2mdv2009.1
++ Revision: 298202
+- Bump release
+- Fix lib install on x86_64
+- import libfli
+
+
