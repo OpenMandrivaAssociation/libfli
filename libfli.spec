@@ -5,7 +5,7 @@
 Summary:	Finger Lakes Instrument Library
 Name:		libfli
 Version:	1.7
-Release:	12
+Release:	13
 License:	GPLv2+
 Group:		Development/Other
 Url:		http://indi.sourceforge.net/index.php/Main_Page
