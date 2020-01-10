@@ -36,7 +36,7 @@ Files needed to build applications based on %{name}.
 
 %prep
 %setup -qn libfli1-%{version}
-%apply_patches
+%autopatch -p1
 
 %build
 %cmake
