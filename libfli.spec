@@ -8,7 +8,7 @@ Version:	1.7
 Release:	16
 License:	GPLv2+
 Group:		Development/Other
-Url:		http://indi.sourceforge.net/index.php/Main_Page
+Url:		https://indi.sourceforge.net/index.php/Main_Page
 Source0:	http://downloads.sourceforge.net/indi/libfli1_%{version}.tar.gz
 Patch0:		libfli-1.7.190-fix-link.patch
 Patch1:		libfli-1.7.190-fix-lib.patch
